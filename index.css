@@ -1,0 +1,181 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-image: url('https://cdn.discordapp.com/attachments/1048190439557181474/1048507745797689435/PUPBODYBG.png');
+    background-size: cover;
+  }
+
+  .sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: rgb(254, 136, 136);
+    overflow-x: hidden;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 1em;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    background-color: rgb(243, 118, 118);
+  }
+  
+  .logo-PUP {
+    height: 100px;
+  }
+
+  .sidenav a:hover {
+    color: #ff0000;
+    cursor: pointer;
+  }
+  
+  .main {
+    margin-left: 140px;
+    font-size: 28px;
+    padding: 0px 10px;
+  }
+
+ .map-background {
+    background-image: url('https://cdn.discordapp.com/attachments/1048190439557181474/1048516308725145620/DrawnPUP2.0.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 19px 1vh 0vh 20vh;
+    padding: 5vh;  
+    display: flex;
+    height: 85vh;
+    filter: blur(0px);
+    box-shadow: black 20px 20px 0.8;
+ }
+
+ .button-div {
+  opacity: 100;
+ }
+
+ .oval-button {
+    position: absolute;
+    left: 67%;
+    bottom: 30%;
+ }
+
+ .chapel-button {
+    position: absolute;
+    left: 47.6%;
+    bottom: 20%;
+ }
+ 
+ .food-button {
+  position: absolute;
+  left: 47.2%;
+  bottom: 6%;
+ }
+
+ .theater-button {
+  position: absolute;
+  left:37.6%;
+  bottom:48%;
+ }
+
+ .mabini-button {
+  position: absolute;
+  bottom:49.5%;
+  left:56.3%;
+ }
+
+.charlie-button {
+  position: absolute;
+  bottom: 64.5%;
+  left:24.3%;
+}
+
+.eastw-button {
+  position: absolute;
+  bottom: 19%;
+  left:37.7%;
+}
+
+.entrance-button {
+  position: absolute;
+  bottom: 59%;
+  left:80%;
+}
+
+.guard-button {
+  position: absolute;
+  bottom: 54.5%;
+  left:73%;
+}
+
+.lagoon-button {
+  position: absolute;
+  bottom: 61%;
+  left:40%;
+}
+
+.ninoy-button {
+  position: absolute;
+  bottom: 82.5%;
+  left:38.2%;
+}
+
+.northw-button {
+  position: absolute;
+  bottom: 39%;
+  left:44.2%;
+}
+
+.obelisk-button {
+  position: absolute;
+  bottom: 61%;
+  left:52.2%;
+}
+
+.physical-button {
+  position: absolute;
+  bottom: 85.9%;
+  left:46.9%;
+}
+
+.imageMap {
+  position: absolute;
+  display: block;
+  height: 50vh;
+  top: 26%;
+  left: 22%;
+  opacity: 0;
+  z-index: 0;
+}
+
+.southnwest-button {
+  position: absolute;
+  bottom: 30%;
+  left:30.2%;
+}
+
+.pool-button {
+  position: absolute;
+  bottom: 87.9%;
+  left:55.1%;
+}
+
+.tennisbball-button {
+  position: absolute;
+  bottom: 71.5%;
+  left:64.1%;
+}
+
+.visitor-button {
+  position: absolute;
+  bottom: 67%;
+  left:73.5%;
+}
+  
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

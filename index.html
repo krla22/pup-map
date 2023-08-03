@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP Map</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="https://kit.fontawesome.com/ea55557551.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="sidenav">
+        <a><img class="logo-PUP" src="https://www.pup.edu.ph/about/images/PUPLogo.png"></a>
+        <a onclick="toActual()">Actual</a>
+        <a onclick="toDrawn()">Drawn</a>
+        <a href="https://www.pup.edu.ph/" target="_blank">PUP Site</a>
+    </div>
+
+    <div class="map-background" id="pup-map" 
+    onclick="
+    resetOval(), resetChapel(), resetFood(), resetTheater(), resetMabini(), 
+    resetCharlie(), resetEastw(), resetEntrance(), resetGuard(), resetLagoon(),
+    resetNinoy(), resetNorthw(), resetObelisk(), resetPhysical(), resetSouthnwest()
+    resetPool(), resetTennisbball(), resetVisitor()">
+    </div>
+
+    <div>
+        <img class="imageMap" id="oval" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048220795568144404/Football.png"/>
+        <img class="imageMap" id="chapel" src="https://media.discordapp.net/attachments/1048220759144800299/1048257734065266708/Chapel.png"/>
+        <img class="imageMap" id="charlie" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413144827035718/Charlie.png"/>
+        <img class="imageMap" id="eastw" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048484190301208596/EastWing.png"/>
+        <img class="imageMap" id="food" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413145829494784/Food.png"/>
+        <img class="imageMap" id="guard" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413194097545236/GuardHouse.png"/>
+        <img class="imageMap" id="lagoon" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413194785390695/Lagoon.png"/>
+        <img class="imageMap" id="mabini" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413195334856787/Mabini.png"/>
+        <img class="imageMap" id="entrance" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413195691380808/MainGate.png"/>
+        <img class="imageMap" id="ninoy" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413196085624922/Ninoy.png"/>
+        <img class="imageMap" id="northw" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413196383432844/NorthWing.png"/>
+        <img class="imageMap" id="obelisk" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413196689625188/Obelisk.png"/>
+        <img class="imageMap" id="pool" src="https://cdn.discordapp.com/attachments/`1048220759144800299/1048413197423620186/Pool.png"/>
+        <img class="imageMap" id="tennisbball" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413197746589696/TennisBBall.png"/>
+        <img class="imageMap" id="charlie" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413144827035718/Charlie.png"/>
+        <img class="imageMap" id="visitor" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413214620254319/Visitor.png"/>
+        <img class="imageMap" id="theater" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048450648158507008/Theater.png"/>
+        <img class="imageMap" id="physical" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413197150978058/Physical.png"/>
+        <img class="imageMap" id="southnwest" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048487208123891712/Southnwest.png"/>
+        <img class="imageMap" id="pool" src="https://media.discordapp.net/attachments/1048220759144800299/1048413197423620186/Pool.png"/>
+        <img class="imageMap" id="tennisbball" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413197746589696/TennisBBall.png"/>
+        <img class="imageMap" id="visitor" src="https://cdn.discordapp.com/attachments/1048220759144800299/1048413214620254319/Visitor.png"/>
+    </div>
+    
+    <div class="button-div" id="button-div">
+        <button id="oval-button" class="oval-button" onclick="showOval()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="chapel-button" class="chapel-button" onclick="showChapel()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="food-button" class="food-button" onclick="showFood()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="theater-button" class="theater-button" onclick="showTheater()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="mabini-button" class="mabini-button" onclick="showMabini()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="charlie-button" class="charlie-button" onclick="showCharlie()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="eastw-button" class="eastw-button" onclick="showEastw()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="entrance-button" class="entrance-button" onclick="showEntrance()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="guard-button" class="guard-button" onclick="showGuard()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="lagoon-button" class="lagoon-button" onclick="showLagoon()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="ninoy-button" class="ninoy-button" onclick="showNinoy()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="northw-button" class="northw-button" onclick="showNorthw()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="obelisk-button" class="obelisk-button" onclick="showObelisk()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="physical-button" class="physical-button" onclick="showPhysical()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="southnwest-button" class="southnwest-button" onclick="showSouthnwest()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="pool-button" class="pool-button" onclick="showPool()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="tennisbball-button" class="tennisbball-button" onclick="showTennisbball()"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="visitor-button" class="visitor-button" onclick="showVisitor()"><i class="fa-solid fa-location-dot"></i></button>
+    </div>
+
+</body>
+</html>
